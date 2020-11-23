@@ -16,14 +16,15 @@ export function toRoman(n) {
   //else if (n==5) resultado = "V";
   //else if (n==7) resultado = "VII";
  ////////////////////////////////////
+ while (n >= 1000) {
+  resultado += "M";
+  n -= 1000;
+}
  if (n>=900 && n< 1000) {
   resultado += "CM";
   n -= 900;
 } 
- while (n >= 1000) {
-    resultado += "M";
-    n -= 1000;
-  }
+ 
   if (n >= 500 && n< 900) {
     resultado += "D";
     n -= 500;
@@ -34,14 +35,15 @@ export function toRoman(n) {
   }
   
 //////////////////////////////////////
-if (n>=90 && n< 100) {
-  resultado += "XC";
-  n -= 90;
-}
 while (n >= 100) {
   resultado += "C";
   n -= 100;
 }
+if (n>=90 && n< 100) {
+  resultado += "XC";
+  n -= 90;
+}
+
 if (n >= 50 && n<90) {
   resultado += "L";
   n -= 50;
