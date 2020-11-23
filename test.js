@@ -30,5 +30,8 @@ describe(('Conversión a números romanos'), () => {
   it('test 26', () =>{ strictEqual(toRoman(1560), "MDLX")});
   it('test 27', () =>{ strictEqual(toRoman(2440), "MMCDXL")});
   it('test 28', () =>{ strictEqual(toRoman(3999), "MMMCMXCIX")});
+  it('test 29', () =>{ strictEqual(toRoman(69), "LXIX")});
+  it('test 30', () =>{ strictEqual(toRoman(944), "CMXLIV")});
+  it('test 31', () =>{ strictEqual(toRoman(409), "CDIX")});
   
 })
