@@ -25,5 +25,10 @@ describe(('Conversión a números romanos'), () => {
   it('test 21', () =>{ strictEqual(toRoman(123), "CXXIII")});
   it('test 22', () =>{ strictEqual(toRoman(150), "CL")});
   it('test 23', () =>{ strictEqual(toRoman(340), "CCCXL")});
-  it('test 24', () =>{ strictEqual(toRoman(440), "CDXL")});
+  it('test 24', () =>{ strictEqual(toRoman(49), "XLIX")});
+  it('test 25', () =>{ strictEqual(toRoman(440), "CDXL")});
+  it('test 26', () =>{ strictEqual(toRoman(1560), "MDLX")});
+  it('test 27', () =>{ strictEqual(toRoman(2440), "MMCDXL")});
+  it('test 28', () =>{ strictEqual(toRoman(3999), "MMMCMXCIX")});
+  
 })
